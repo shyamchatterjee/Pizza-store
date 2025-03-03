@@ -1,0 +1,22 @@
+{
+    "product":[
+        {
+            "name" : "Hevena special",
+            "size" : "Small",
+            "price" : 599
+        },
+        {
+            "name" : "Caramel pineappl",
+            "size" : "Small",
+            "price" : 699
+        },{
+            "name" : "Chkien premier",
+            "size" : "Meduim",
+            "price" : 899
+        },{
+            "name" : "Double premier",
+            "size" : "Large",
+            "price" : 1399
+        }
+    ]
+}
