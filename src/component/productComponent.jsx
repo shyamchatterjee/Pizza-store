@@ -8,6 +8,10 @@ let ProductComponent = ()=>{
     <Link to="/productcomponent">Product</Link>
     </div>
     <Link to="/cart">Cart</Link>
-</div></>
+</div>
+   <div className="product-contener">
+
+   </div>
+</>
 }
 export default ProductComponent
