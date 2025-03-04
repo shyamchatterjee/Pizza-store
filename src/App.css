@@ -201,7 +201,7 @@ a{
 
 @media (max-width:1400px) {
   .product-contener{
-   
+   padding: 1rem;
   
     width: 100%;
     display: flex;
