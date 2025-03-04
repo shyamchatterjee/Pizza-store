@@ -155,6 +155,40 @@ a{
     height: 200px;
     width: 200px;
   }
+  
+  .add-remove-edit{
+    display: flex;
+    gap: 5px;
+  }
+  .add{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .remove{
+    background-color: red;
+   
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .edit{
+    background-color: rgb(41, 118, 41);
+    
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .product-contener{
+    display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
 }
 .submit-button{
   cursor: pointer;
@@ -164,12 +198,50 @@ a{
   color: white;
   border: none;
 }
-.product-contener{
+
+@media (max-width:1400px) {
+  .product-contener{
    
-  padding: 1rem;
+  
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.add-remove-edit{
+  display: flex;
+  gap: 1rem;
+}
+.add{
+  background-color: orange;
+  width: 110px;
+  height: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.remove{
+  background-color: red;
+  width: 110px;
+  height: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.edit{
+  background-color: rgb(41, 118, 41);
+  width: 110px;
+  height: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 }

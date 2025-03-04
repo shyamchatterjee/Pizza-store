@@ -8,7 +8,13 @@ let useHooks = ()=>{
                  setArray(value.data)
             })
         }
-        return ({array,getApi})
+
+        let removeItem = (id)=>{
+           api.delete("/product/"+id).then((value)=>{
+                 getApi()
+           })
+        }
+        return ({array,getApi,removeItem})
        
 }
 export default useHooks
