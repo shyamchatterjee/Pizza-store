@@ -15,7 +15,7 @@ let Home = ()=>{
                      <h2>Don't Wait !</h2>
                     <Link  to="/productcomponent"> <button className="order-now">Order Now</button></Link>
                </div>
-               <img src="https://th.bing.com/th/id/OIP.CTvtcFfgBNVXb7DBolK--gHaHa?rs=1&pid=ImgDetMain" height={200} width={200} alt="" />
+               <img src="https://th.bing.com/th/id/OIP.Cw7uGPfe6kddYwb0QZVmGQHaFw?rs=1&pid=ImgDetMain" height={200} width={200} alt="" />
       </div>
       
       </>

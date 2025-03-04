@@ -1,22 +1,28 @@
 {
-    "product":[
-        {
-            "name" : "Hevena special",
-            "size" : "Small",
-            "price" : 599
-        },
-        {
-            "name" : "Caramel pineappl",
-            "size" : "Small",
-            "price" : 699
-        },{
-            "name" : "Chkien premier",
-            "size" : "Meduim",
-            "price" : 899
-        },{
-            "name" : "Double premier",
-            "size" : "Large",
-            "price" : 1399
-        }
-    ]
+  "product": [
+    {
+      "image": "https://kouzinapizza.ca/wp-content/uploads/2023/09/Chef-Special.jpg.webp",
+      "name": "Hevena special",
+      "size": "Small",
+      "price": 599
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.uq87A-JbKmwuumzXmfHQtgHaHa?w=750&h=750&rs=1&pid=ImgDetMain",
+      "name": "Caramel pineappl",
+      "size": "Small",
+      "price": 699
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.KSiFPNeg3JPPYBKb-4TV0QHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain",
+      "name": "Chkien premier",
+      "size": "Meduim",
+      "price": 899
+    },
+    {
+      "image": "https://pizzamiamiami.com/wp-content/uploads/2020/04/pizza-mia-veggie-2-low-800x800.png",
+      "name": "Double premier",
+      "size": "Large",
+      "price": 1399
+    }
+  ]
 }
