@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import Product from "./product"
 
 let ProductComponent = ()=>{
     return <> <div className="nav">
@@ -10,7 +11,7 @@ let ProductComponent = ()=>{
     <Link to="/cart">Cart</Link>
 </div>
    <div className="product-contener">
-
+           <Product/>
    </div>
 </>
 }

@@ -1,8 +1,9 @@
 import { Link } from "react-router"
 import useHooks from "../hooks/useHooks"
+import Product from "./product"
 
 let Home = ()=>{
-        useHooks()
+         
       return <> <div className="nav">
                 <Link to="/createform">Create Product</Link>
                 <div className="router-contener">
@@ -19,7 +20,9 @@ let Home = ()=>{
                </div>
                <img className="large-image" src="https://th.bing.com/th/id/OIP.Cw7uGPfe6kddYwb0QZVmGQHaFw?rs=1&pid=ImgDetMain" height={300} width={300} alt="" />
       </div>
-      
+      <div className="product-contener">
+            <Product/>
+</div>
       </>
 }
 export default Home
