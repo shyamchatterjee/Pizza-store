@@ -1,6 +1,8 @@
 import { Link } from "react-router"
+import useHooks from "../hooks/useHooks"
 
 let Home = ()=>{
+        useHooks()
       return <> <div className="nav">
                 <Link to="/createform">Create Product</Link>
                 <div className="router-contener">
@@ -15,7 +17,7 @@ let Home = ()=>{
                      <h2>Don't Wait !</h2>
                     <Link  to="/productcomponent"> <button className="order-now">Order Now</button></Link>
                </div>
-               <img src="https://th.bing.com/th/id/OIP.Cw7uGPfe6kddYwb0QZVmGQHaFw?rs=1&pid=ImgDetMain" height={200} width={200} alt="" />
+               <img className="large-image" src="https://th.bing.com/th/id/OIP.Cw7uGPfe6kddYwb0QZVmGQHaFw?rs=1&pid=ImgDetMain" height={300} width={300} alt="" />
       </div>
       
       </>

@@ -40,6 +40,7 @@ let Createform = () => {
             <p>Price</p>
             <input type="number" name="" id="input-price" placeholder="input-ptice" />
           </div>
+            <input className="submit-button" type="submit" value="Post" />
         </form>
       </div>
     </>
