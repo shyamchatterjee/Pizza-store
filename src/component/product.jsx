@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import useHooks from "../hooks/useHooks";
+import { Link } from "react-router";
 
 let Product = () => {
   let { array, getApi,removeItem } = useHooks();
@@ -19,7 +20,7 @@ let Product = () => {
                      
                       <button className="add">Add</button>
                       <button className="remove" onClick={()=>removeItem(element.id)}>Remove</button>
-                      <button className="edit">edit</button>
+                    <Link  to={"/updateform/" + element.id}><button className="edit">edit</button></Link>  
 
                    </div>
         </div>
