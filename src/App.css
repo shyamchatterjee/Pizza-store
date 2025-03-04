@@ -49,9 +49,10 @@
 }
 a{
   text-decoration: none;
-  color: orange;
+  color: orangered;
   font-size: larger;
 }
+
 .router-contener{
   display: flex;
   gap: 1rem;

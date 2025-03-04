@@ -14,13 +14,13 @@ let Createform = () => {
       <div className="nav">
         <Link to="/createform">Create Product</Link>
         <div className="router-contener">
-          <Link to="/">Home</Link>
+          <Link to="/">Login</Link>
           <Link to="/productcomponent">Product</Link>
         </div>
       </div>
       <div className="form-contener">
         <form className="form" onSubmit={(e)=>{e.preventDefault(),postItem(obj)}}>
-          <h2 style={{ textAlign: "center" }}>Create form</h2>
+          <h2 style={{ textAlign: "center" , color:"green" }}>Create Product</h2>
           <div className="mini-contener">
             <p>Product name</p>
             <input type="text" name="" id="name-input" placeholder="Name-product" value={obj.name} onChange={(e)=>{setObj({...obj,name:e.target.value})}}  />

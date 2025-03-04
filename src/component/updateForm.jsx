@@ -15,13 +15,13 @@ let Updateform = ()=>{
        <div className="nav">
         <Link to="/createform">Create Product</Link>
         <div className="router-contener">
-          <Link to="/">Home</Link>
+          <Link to="/">Login</Link>
           <Link to="/productcomponent">Product</Link>
         </div>
       </div>
       <div className="form-contener">
         <form className="form" onSubmit={(e)=>{e.preventDefault(),updateItem(updateObj.id,updateObj)}} >
-          <h2 style={{ textAlign: "center" }}>Update form</h2>
+          <h2 style={{ textAlign: "center" ,color:"green" }}>Update Product</h2>
           <div className="mini-contener">
             <p>Product name</p>
             <input type="text" name="" id="name-input" placeholder="Name-product" value={updateObj.name} onChange={(e)=>{setupdateObj({...updateObj,name:e.target.value})}}  />

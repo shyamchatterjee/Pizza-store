@@ -7,9 +7,11 @@ import ProductComponent from './productComponent';
 import Createform from './createProduct';
 import Cart from './cartComponent';
 import Updateform from './updateForm';
+import { ContextFuntion } from '../context/context';
 
 function App() {
       return <BrowserRouter>
+          <ContextFuntion>
             <Routes>
                   <Route  path='/createform'   element={<Createform/>} />
                  <Route path='/' element={<Home/>}  />
@@ -17,6 +19,7 @@ function App() {
                   <Route  path='/cart' element={<Cart/>} />
                   <Route path='/updateform/:elementid' element= {<Updateform/>}    />
             </Routes>
+            </ContextFuntion>
       </BrowserRouter>
 }
 
