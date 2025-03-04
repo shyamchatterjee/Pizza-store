@@ -1,6 +1,7 @@
 import { Link } from "react-router"
 import useHooks from "../hooks/useHooks"
 import Product from "./product"
+import { FaShoppingCart } from "react-icons/fa";
 
 let Home = ()=>{
          
@@ -10,7 +11,11 @@ let Home = ()=>{
                 <Link to="/" >Home</Link>
                 <Link to="/productcomponent">Product</Link>
                 </div>
-                <Link to="/cart">Cart</Link>
+                <Link to="/cart"> <div className="cart-contener">
+                
+                  < FaShoppingCart  className="cart-img"/> 
+                  <p style={{fontSize:"13px",color:"black"}}>0</p>
+                </div></Link>
       </div>
       <div className="heading-contener">
                <div className="heading">

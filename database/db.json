@@ -4,25 +4,64 @@
       "image": "https://kouzinapizza.ca/wp-content/uploads/2023/09/Chef-Special.jpg.webp",
       "name": "Hevena special",
       "size": "Small",
-      "price": 599
+      "price": 599,
+      "id": "b59b"
     },
     {
       "image": "https://th.bing.com/th/id/OIP.uq87A-JbKmwuumzXmfHQtgHaHa?w=750&h=750&rs=1&pid=ImgDetMain",
       "name": "Caramel pineappl",
       "size": "Small",
-      "price": 699
+      "price": 699,
+      "id": "f037"
     },
     {
       "image": "https://th.bing.com/th/id/OIP.KSiFPNeg3JPPYBKb-4TV0QHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain",
       "name": "Chkien premier",
       "size": "Meduim",
-      "price": 899
+      "price": 899,
+      "id": "ed83"
     },
     {
       "image": "https://pizzamiamiami.com/wp-content/uploads/2020/04/pizza-mia-veggie-2-low-800x800.png",
       "name": "Double premier",
       "size": "Large",
-      "price": 1399
+      "price": 1399,
+      "id": "6b78"
+    },
+    {
+      "id": "5406",
+      "name": "Mushroom",
+      "image": "https://toppng.com/uploads/preview/pizza-png-11553999379orjd1miyt1.png",
+      "price": 499,
+      "size": "Small"
+    },
+    {
+      "id": "0317",
+      "name": "Mix-BBQ",
+      "image": "https://th.bing.com/th/id/OIP.YCXNIX971ixAhZwz46AcAwHaHg?rs=1&pid=ImgDetMain",
+      "size": "Larger",
+      "price": 1299
+    },
+    {
+      "id": "0786",
+      "image": "https://img.freepik.com/premium-photo/photo-pizza-with-no-background-with-white-back_670382-117521.jpg",
+      "name": "Carbonara",
+      "size": "Larger",
+      "price": 999
+    },
+    {
+      "id": "1ad0",
+      "image": "https://th.bing.com/th/id/OIP.N6AjoGLagdXJfvuNm66tHwHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain",
+      "name": "Chicken mushroom",
+      "size": "Small",
+      "price": 699
+    },
+    {
+      "id": "5e61",
+      "image": "https://thumbs.dreamstime.com/b/pepperoni-pizza-basil-leaves-isolated-white-background-36065085.jpg",
+      "name": "Four cheese",
+      "size": "Medium",
+      "price": 799
     }
   ]
 }

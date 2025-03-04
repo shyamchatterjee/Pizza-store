@@ -1,10 +1,11 @@
 import { Link } from "react-router";
+import useHooks from "../hooks/useHooks";
 
 let Createform = () => {
 
- 
+   let {obj,setObj,postItem} = useHooks()
 
-
+    
 
 
   return (
@@ -18,19 +19,19 @@ let Createform = () => {
         </div>
       </div>
       <div className="form-contener">
-        <form className="form">
+        <form className="form" onSubmit={(e)=>{e.preventDefault(),postItem(obj)}}>
           <h2 style={{ textAlign: "center" }}>Create form</h2>
           <div className="mini-contener">
             <p>Product name</p>
-            <input type="text" name="" id="name-input" placeholder="Name-product"  />
+            <input type="text" name="" id="name-input" placeholder="Name-product" value={obj.name} onChange={(e)=>{setObj({...obj,name:e.target.value})}}  />
           </div>
           <div className="mini-contener">
             <p>Image</p>
-            <input type="text" name="" id="image-input" placeholder="Img-url" />
+            <input type="text" name="" id="image-input" placeholder="Img-url" value={obj.image}  onChange={(e)=>{setObj({...obj,image:e.target.value})}} />
           </div>
           <div className="mini-contener">
             <p>Size</p>
-            <select name="" id="select-input">
+            <select name="" id="select-input" onClick={(e)=>{setObj({...obj,size:e.target.value})}}>
                 <option value="Small">Small</option>
                 <option value="Medium">Medium</option>
                 <option value="Larger">Larger</option>
@@ -38,7 +39,7 @@ let Createform = () => {
           </div>
           <div className="mini-contener">
             <p>Price</p>
-            <input type="number" name="" id="input-price" placeholder="input-ptice" />
+            <input type="number" name="" id="input-price" placeholder="input-ptice" value={obj.price} onChange={(e)=>{setObj({...obj,price: Number(e.target.value)})}} />
           </div>
             <input className="submit-button" type="submit" value="Post" />
         </form>

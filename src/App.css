@@ -244,4 +244,13 @@ a{
   color: white;
   cursor: pointer;
 }
+
+}
+.cart-img{
+  color: orange;
+  font-size: 25px;
+}
+.cart-contener{
+  display: flex;
+   gap: 2px;
 }
