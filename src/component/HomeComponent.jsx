@@ -4,12 +4,14 @@ import Product from "./product"
 import { CiShoppingCart } from "react-icons/ci";
 import { useContext, useEffect } from "react";
 import { Context } from "../context/context";
+import useHooks2 from "../hooks/useHooks2";
+import { contect } from "../contast/contect";
 
 let Home = ()=>{
         let {loginData,setloginData,wrongPassword} = useContext(Context)
-      let {logiFuntion} = useHooks()
+      let {logiFuntion} = useHooks2()
       
-     
+      
          
       return <> 
       <div className="form-contener">
@@ -22,6 +24,7 @@ let Home = ()=>{
           <div className="mini-contener">
             <p>Email</p>
             <input type="email" name="" id="image-input" placeholder="Enter your email" required value={loginData.email} onChange={(e)=>{setloginData({...loginData,email : e.target.value})}}    />
+            
           </div>
           
           <div className="mini-contener">

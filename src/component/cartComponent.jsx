@@ -14,7 +14,7 @@ let Cart = ()=>{
          }
     return <> <div className="nav">
     <Link to="/createform">Create Product</Link>
-       <button onClick={totalpriceFind}>Grand total</button>
+       <button className="grandtotal-button" onClick={totalpriceFind}>Grand total</button>
     <div className="router-contener">
     <Link to="/" >Login</Link>
        
@@ -27,7 +27,7 @@ let Cart = ()=>{
         {cartArray.map((element)=>{
               return <div className="cart">
                       <img src={element.image} height={70} width={70} alt="" />
-                        <h3>{element.name}</h3>
+                        <h3 className="element-name-style">{element.name}</h3>
                         <h4 style={{color:"green"}}>{ "Rs." + element.price}</h4>
                         <p>{"Quntity: "+ element.q}</p>
                         <p style={{color:"red"}}>{"Total: " + "Rs. " + element.price*element.q}</p>

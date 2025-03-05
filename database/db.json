@@ -64,8 +64,42 @@
       "price": 799
     }
   ],
-  "user":[
-    
+  "user": [
+    {
+      "id": "3e00",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "8191",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "33e3",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "a98b",
+      "email": "shyam@123",
+      "password": "12344668",
+      "name": "shyam"
+    },
+    {
+      "id": "fa4c",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "263c",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    }
   ]
 }
-

@@ -10,6 +10,7 @@ export let ContextFuntion = ({ children }) => {
   let [wrongPassword,setwrongPassword] = useState("")
   
   let [Name, setName] = useState("")
+  let [contectArray,setcontectArray] = useState([])
  
   let addtoProduct = (data) => {
     let findItem = cartArray.find((item) => {
@@ -38,7 +39,7 @@ export let ContextFuntion = ({ children }) => {
   };
 
   return (
-    <Context.Provider value={{ cartArray, addtoProduct, removeItem,array,setArray,updateObj,setupdateObj,obj,setObj,loginData,setloginData,wrongPassword,setwrongPassword,Name,setName}}>
+    <Context.Provider value={{ cartArray, addtoProduct, removeItem,array,setArray,updateObj,setupdateObj,obj,setObj,loginData,setloginData,wrongPassword,setwrongPassword,Name,setName,contectArray,setcontectArray}}>
       {children}
     </Context.Provider>
   );

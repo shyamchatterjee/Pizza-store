@@ -4,8 +4,8 @@ import { useNavigate, useSearchParams } from "react-router";
 import { Context } from "../context/context";
 
 let useHooks = () => {
-  let navigate = useNavigate()
-    let { setArray,updateObj,obj,setwrongPassword}  = useContext(Context)
+  
+    let { setArray,updateObj,obj}  = useContext(Context)
     let [query,setquery]= useSearchParams()
        let limit = query.get("limit")
   useEffect(() => {
@@ -40,24 +40,8 @@ let useHooks = () => {
               updateObj.price = ""
         })
   }
-   let logiFuntion =  (data)=>{
-     
-       if (data.password.length>8 ) {
-           setwrongPassword("Please correct your password")
-           return
-       } else if(data.password.length<8){
-        setwrongPassword("Please correct your password")
-        return
-       } 
-       alert("Login successful")
-      
-      
-         navigate("/productcomponent")
-  
-         
-        // navigate("/productcomponent")
-   }
    
-  return { getApi, removeItem, postItem ,updateItem , logiFuntion };
+   
+  return { getApi, removeItem, postItem ,updateItem };
 };
 export default useHooks;
