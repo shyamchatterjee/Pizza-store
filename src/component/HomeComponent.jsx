@@ -2,10 +2,12 @@ import { Link, useNavigate } from "react-router"
 import useHooks from "../hooks/useHooks"
 import Product from "./product"
 import { CiShoppingCart } from "react-icons/ci";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { Context } from "../context/context";
 
 let Home = ()=>{
-      let {loginData,setloginData,logiFuntion,wrongPassword} = useHooks()
+        let {loginData,setloginData,wrongPassword} = useContext(Context)
+      let {logiFuntion} = useHooks()
       
      
          

@@ -5,16 +5,9 @@ import { Context } from "../context/context";
 import Addedproduct from "./addedbuton";
 
 let Product = () => {
-  let { array, getApi,removeItem } = useHooks();
-     let {addtoProduct} = useContext(Context)
-  useEffect(() => {
-  
-      
-    
-    getApi();
-    
-
-  }, []);
+  let {  removeItem } = useHooks();
+     let {array} = useContext(Context)
+ 
   
   return (
     <>

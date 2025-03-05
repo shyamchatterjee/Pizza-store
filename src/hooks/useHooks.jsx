@@ -1,20 +1,19 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { api } from "../Api/api";
-import { useNavigate } from "react-router";
+import { useNavigate, useSearchParams } from "react-router";
+import { Context } from "../context/context";
 
 let useHooks = () => {
-  let [array, setArray] = useState([]);
-  let [obj, setObj] = useState({});
-  let [updateObj,setupdateObj] = useState({})
-  let [loginData,setloginData] = useState({})
-  let [wrongPassword,setwrongPassword] = useState("")
-  let [Disabled,setDisabled] = useState(false)
   let navigate = useNavigate()
-  let [name, setname] = useState("")
-  let [bttontext,setbttonText] = useState("Add")
-  let [bttonColor,setbottonColor] = useState("orange")
-  let getApi = () => {
-    api.get("/product").then((value) => {
+    let { setArray,updateObj,obj,setwrongPassword}  = useContext(Context)
+    let [query,setquery]= useSearchParams()
+       let limit = query.get("limit")
+  useEffect(() => {
+    getApi(limit);
+  }, [])
+  
+  let getApi = (limit) => {
+    api.get("/product?_limit=" + limit).then((value) => {
       setArray(value.data);
     });
   };
@@ -58,17 +57,7 @@ let useHooks = () => {
          
         // navigate("/productcomponent")
    }
-   let bttoncolorChange = ()=>{
-      setbttonText("Added")
-      setbottonColor("green")
-      setDisabled(true)
-        setTimeout(() => {
-          setbttonText("Add")
-          setbottonColor("orange")
-          setDisabled(true)
-        }, 2000);
-       
-   }
-  return { array, getApi, removeItem, obj, setObj, postItem,updateObj,setupdateObj ,updateItem , loginData,setloginData ,logiFuntion ,wrongPassword,setArray,name,setname,bttonColor,bttontext,bttoncolorChange,Disabled};
+   
+  return { getApi, removeItem, postItem ,updateItem , logiFuntion };
 };
 export default useHooks;

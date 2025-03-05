@@ -1,9 +1,12 @@
 import { Link } from "react-router";
 import useHooks from "../hooks/useHooks";
+import { useContext } from "react";
+import { Context } from "../context/context";
 
 let Createform = () => {
 
-   let {obj,setObj,postItem} = useHooks()
+   let {postItem} = useHooks()
+   let {obj,setObj} = useContext(Context)
 
     
 

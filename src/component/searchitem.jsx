@@ -1,26 +1,39 @@
-import { useEffect } from "react";
-import useHooks from "../hooks/useHooks"
+import { useContext, useEffect } from "react";
+import useHooks from "../hooks/useHooks";
+import { Context } from "../context/context";
+import { useSearchParams } from "react-router";
+import { api } from "../Api/api";
 
-let SearchItem = ()=>{
-      let {name,setname,getApi,array,setArray} = useHooks()
-      useEffect(()=>{
-        if (name=="") {
-          
-        
-          getApi();
-          } else{
-      
-          
-          let filteritem = array.filter((element)=>{
-            if (element.name.toLowerCase().includes(name)) {
-               return element
+let SearchItem = () => {
+  let {  getApi } = useHooks();
+   let { array, setArray,Name,setName} = useContext(Context)
+    
+     
+  useEffect(() => {
+    if (Name == "") {
+      getApi();
+    } else {
+       let filterItem = array.filter((element)=>{
+            if (element.name.toLowerCase().includes(Name.toLowerCase())) {
+                 return element
             }
-      })
-      setArray(filteritem)
-      }
-      },[name])
-    return <input type="text" name="" id="" onChange={(e)=>{
-            setname(e.target.value)
-    }} />
-}
-export default SearchItem
+       })
+       setArray(filterItem)
+      
+      
+    }
+  }, [Name]);
+  return (
+    <input
+    className="search-item"
+      type="text"
+      name=""
+      id=""
+      placeholder="Search-product"
+      onChange={(e) => {
+        setName( e.target.value);
+      }}
+    />
+  );
+};
+export default SearchItem;

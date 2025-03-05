@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Link, useParams } from "react-router"
 import { api } from "../Api/api"
 import useHooks from "../hooks/useHooks"
+import { Context } from "../context/context"
 
 let Updateform = ()=>{
      let perams = useParams()
-       let {updateObj,setupdateObj,updateItem} = useHooks()
+       let {updateItem} = useHooks()
+      let {updateObj,setupdateObj} = useContext(Context)
     useEffect(()=>{
          api.get("/product/"+perams.elementid).then((value)=>{
                 setupdateObj(value.data)
