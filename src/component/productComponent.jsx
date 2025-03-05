@@ -1,8 +1,11 @@
 import { Link } from "react-router";
 import Product from "./product";
 import { CiShoppingCart } from "react-icons/ci";
+import { useContext } from "react";
+import { Context } from "../context/context";
 
 let ProductComponent = () => {
+    let {cartArray} = useContext(Context)
   return (
     <>
     
@@ -13,10 +16,10 @@ let ProductComponent = () => {
           <Link to="/productcomponent">Product</Link>
 
         </div>
-        <Link to="/cart"> <div className="cart-contener">
+        <Link to="/cart"> <div className="cart-img-contener">
                 
                   < CiShoppingCart  className="cart-img"/> 
-                  <p style={{fontSize:"13px",color:"red"}}>0</p>
+                  <p style={{fontSize:"13px",color:"red"}}>{cartArray.length}</p>
                 </div></Link>
       </div>
       <div className="heading-contener">

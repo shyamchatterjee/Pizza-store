@@ -1,21 +1,17 @@
-import { Link } from "react-router"
+import { Link, useNavigate } from "react-router"
 import useHooks from "../hooks/useHooks"
 import Product from "./product"
 import { CiShoppingCart } from "react-icons/ci";
+import { useEffect } from "react";
 
 let Home = ()=>{
       let {loginData,setloginData,logiFuntion,wrongPassword} = useHooks()
+      
+     
          
-      return <> <div className="nav">
-                <Link to="/createform">Create Product</Link>
-                <div className="router-contener">
-                <Link to="/"  >Login</Link>
-                <Link to="/productcomponent">Product</Link>
-                </div>
-               
-      </div>
+      return <> 
       <div className="form-contener">
-        <form className="form" onSubmit={(e)=>{e.preventDefault(),logiFuntion(loginData)}} >
+        <form className="form" onSubmit={(e)=>{e.preventDefault(),    logiFuntion(loginData)}} >
           <h2 style={{ textAlign: "center" , color:"blue" }}>Log in</h2>
           <div className="mini-contener">
             <p> Name</p>

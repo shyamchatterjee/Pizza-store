@@ -47,7 +47,12 @@ let useHooks = () => {
         return
        } 
        alert("Login successful")
-        navigate("/productcomponent")
+      
+      
+         navigate("/productcomponent")
+  
+         
+        // navigate("/productcomponent")
    }
   return { array, getApi, removeItem, obj, setObj, postItem,updateObj,setupdateObj ,updateItem , loginData,setloginData ,logiFuntion ,wrongPassword};
 };
