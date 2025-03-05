@@ -8,7 +8,11 @@ let useHooks = () => {
   let [updateObj,setupdateObj] = useState({})
   let [loginData,setloginData] = useState({})
   let [wrongPassword,setwrongPassword] = useState("")
+  let [Disabled,setDisabled] = useState(false)
   let navigate = useNavigate()
+  let [name, setname] = useState("")
+  let [bttontext,setbttonText] = useState("Add")
+  let [bttonColor,setbottonColor] = useState("orange")
   let getApi = () => {
     api.get("/product").then((value) => {
       setArray(value.data);
@@ -54,6 +58,17 @@ let useHooks = () => {
          
         // navigate("/productcomponent")
    }
-  return { array, getApi, removeItem, obj, setObj, postItem,updateObj,setupdateObj ,updateItem , loginData,setloginData ,logiFuntion ,wrongPassword};
+   let bttoncolorChange = ()=>{
+      setbttonText("Added")
+      setbottonColor("green")
+      setDisabled(true)
+        setTimeout(() => {
+          setbttonText("Add")
+          setbottonColor("orange")
+          setDisabled(true)
+        }, 2000);
+       
+   }
+  return { array, getApi, removeItem, obj, setObj, postItem,updateObj,setupdateObj ,updateItem , loginData,setloginData ,logiFuntion ,wrongPassword,setArray,name,setname,bttonColor,bttontext,bttoncolorChange,Disabled};
 };
 export default useHooks;

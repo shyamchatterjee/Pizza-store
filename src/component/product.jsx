@@ -8,8 +8,14 @@ let Product = () => {
   let { array, getApi,removeItem } = useHooks();
      let {addtoProduct} = useContext(Context)
   useEffect(() => {
+  
+      
+    
     getApi();
+    
+
   }, []);
+  
   return (
     <>
     

@@ -1,8 +1,11 @@
 import { useContext } from "react"
 import { Context } from "../context/context"
+import useHooks from "../hooks/useHooks"
 
 let Addedproduct = ({element})=>{
     let {addtoProduct} = useContext(Context)
-return  <button className="add" onClick={()=>addtoProduct(element)}>Add</button>
+    let {bttonColor,bttontext,bttoncolorChange,Disabled} = useHooks()
+     
+return  <button className="add" style={{backgroundColor:bttonColor}} disabled={Disabled} onClick={()=>{addtoProduct(element),bttoncolorChange()}}>{bttontext}</button>
 }
 export default Addedproduct

@@ -1,11 +1,16 @@
 import { Link } from "react-router";
 import Product from "./product";
 import { CiShoppingCart } from "react-icons/ci";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Context } from "../context/context";
+
+
+import SearchItem from "./searchItem";
 
 let ProductComponent = () => {
     let {cartArray} = useContext(Context)
+  
+   
   
   return (
     <>
@@ -31,7 +36,11 @@ let ProductComponent = () => {
                </div>
                <img className="large-image" src="https://th.bing.com/th/id/OIP.Cw7uGPfe6kddYwb0QZVmGQHaFw?rs=1&pid=ImgDetMain" height={300} width={300} alt="" />
       </div>
-         
+         <div className="search-contener">
+         <SearchItem/>
+    
+  
+         </div>
       <div className="product-contener">
             <Product/>
 </div>
