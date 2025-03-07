@@ -13,7 +13,7 @@ let Product = () => {
     <>
     
       {array.map((element) => {
-        return <div className="product">
+        return <Link to={"/productcontener/"+ element.id}><div className="product">
                 <img src={element.image} height={100} width={100} alt="" />
                  <h3>{element.name}</h3>
                    <div>{element.size}</div>
@@ -25,7 +25,7 @@ let Product = () => {
                     <Link  to={"/updateform/" + element.id}><button className="edit">edit</button></Link>  
 
                    </div>
-        </div>
+        </div> </Link> 
       })}
     </>
   );
