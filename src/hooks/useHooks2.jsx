@@ -24,13 +24,19 @@ let useHooks2 = ()=>{
         } else if(data.password.length<8){
          setwrongPassword("Please currect your password")
          return
-        } 
+        }else{
+         setwrongPassword("")
+         
+        }
         contect.post("/user",data).then((value)=>{
               getapi()
               alert("Login successful")
        
        
           navigate("/productcomponent")
+          data.name = ""
+          data.email = ""
+          data.password = ""
    
         })
 

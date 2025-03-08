@@ -26,11 +26,11 @@ let Createform = () => {
           <h2 style={{ textAlign: "center" , color:"green" }}>Create Product</h2>
           <div className="mini-contener">
             <p>Product name</p>
-            <input type="text" name="" id="name-input" placeholder="Name-product" value={obj.name} onChange={(e)=>{setObj({...obj,name:e.target.value})}}  />
+            <input type="text" name="" id="name-input" placeholder="Enter productname" value={obj.name} onChange={(e)=>{setObj({...obj,name:e.target.value})}}  />
           </div>
           <div className="mini-contener">
             <p>Image</p>
-            <input type="text" name="" id="image-input" placeholder="Img-url" value={obj.image}  onChange={(e)=>{setObj({...obj,image:e.target.value})}} />
+            <input type="text" name="" id="image-input" placeholder=" Enter Img-url" value={obj.image}  onChange={(e)=>{setObj({...obj,image:e.target.value})}} />
           </div>
           <div className="mini-contener">
             <p>Size</p>
@@ -42,7 +42,11 @@ let Createform = () => {
           </div>
           <div className="mini-contener">
             <p>Price</p>
-            <input type="number" name="" id="input-price" placeholder="input-ptice" value={obj.price} onChange={(e)=>{setObj({...obj,price: Number(e.target.value)})}} />
+            <input type="number" name="" id="input-price" placeholder="Enter product price" value={obj.price} onChange={(e)=>{setObj({...obj,price: Number(e.target.value)})}} />
+          </div>
+          <div className="mini-contener">
+            <p>rating</p>
+            <input type="text" name="" id="input-price" placeholder="Enter rating" value={obj.rating} onChange={(e)=>{setObj({...obj,rating: e.target.value})}} />
           </div>
             <input className="submit-button" type="submit" value="Post" />
         </form>

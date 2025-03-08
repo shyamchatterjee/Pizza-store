@@ -5,6 +5,7 @@
 }
 body {
   padding: 1rem;
+  font-family:"Poppins", sans-serif; ;
 }
 #root {
   width: 100%;
@@ -114,7 +115,7 @@ a {
   .form {
     margin-top: 50px;
     width: 350px;
-    height: 400px;
+    height: 500px;
     border: 1px solid black;
     padding: 1rem;
     display: flex;
@@ -252,6 +253,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
   }
   .cart {
     display: flex;
@@ -316,4 +318,25 @@ a {
     border: none;
     cursor: pointer;
   }
+}
+.product-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.form{
+  overflow-y: scroll;
+}
+.form::-webkit-scrollbar{
+  display: none;
+}
+.iamge-rating-container{
+  width: 250px;
+  height: 250px;
+  
+   box-shadow: 1px 0 1px 1px black ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }

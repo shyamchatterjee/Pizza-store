@@ -26,11 +26,11 @@ let Updateform = ()=>{
           <h2 style={{ textAlign: "center" ,color:"green" }}>Update Product</h2>
           <div className="mini-contener">
             <p>Product name</p>
-            <input type="text" name="" id="name-input" placeholder="Name-product" value={updateObj.name} onChange={(e)=>{setupdateObj({...updateObj,name:e.target.value})}}  />
+            <input type="text" name="" id="name-input" placeholder=" Enter productname" value={updateObj.name} onChange={(e)=>{setupdateObj({...updateObj,name:e.target.value})}}  />
           </div>
           <div className="mini-contener">
             <p>Image</p>
-            <input type="text" name="" id="image-input" placeholder="Img-url" value={updateObj.image}  onChange={(e)=>{setupdateObj({...updateObj,image:e.target.value})}} />
+            <input type="text" name="" id="image-input" placeholder="  Enter Img-url" value={updateObj.image}  onChange={(e)=>{setupdateObj({...updateObj,image:e.target.value})}} />
           </div>
           <div className="mini-contener">
             <p>Size</p>
@@ -42,7 +42,11 @@ let Updateform = ()=>{
           </div>
           <div className="mini-contener">
             <p>Price</p>
-            <input type="number" name="" id="input-price" placeholder="input-ptice" value={updateObj.price} onChange={(e)=>{setupdateObj({...updateObj,price: Number(e.target.value)})}} />
+            <input type="number" name="" id="input-price" placeholder="Enter-price" value={updateObj.price} onChange={(e)=>{setupdateObj({...updateObj,price: Number(e.target.value)})}} />
+          </div>
+          <div className="mini-contener">
+            <p>Rating</p>
+          <input type="text" name="" id="input-price" placeholder="Enter rating" value={updateObj.rating} onChange={(e)=>{setupdateObj({...updateObj,rating: e.target.value})}} />
           </div>
             <input className="submit-button" type="submit" value="Update" />
         </form>

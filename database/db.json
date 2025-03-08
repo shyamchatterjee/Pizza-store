@@ -5,63 +5,56 @@
       "name": "Hevena special",
       "size": "Small",
       "price": 590,
-      "id": "b59b"
-    },
-    {
-      "image": "https://th.bing.com/th/id/OIP.uq87A-JbKmwuumzXmfHQtgHaHa?w=750&h=750&rs=1&pid=ImgDetMain",
-      "name": "Caramel pineappl",
-      "size": "Small",
-      "price": 699,
-      "id": "f037"
-    },
-    {
-      "image": "https://th.bing.com/th/id/OIP.KSiFPNeg3JPPYBKb-4TV0QHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain",
-      "name": "Chicken premier",
-      "size": "Meduim",
-      "price": 899,
-      "id": "ed83"
+      "id": "b59b",
+      "rating": "****"
     },
     {
       "image": "https://pizzamiamiami.com/wp-content/uploads/2020/04/pizza-mia-veggie-2-low-800x800.png",
       "name": "Double premier",
       "size": "Large",
       "price": 1399,
-      "id": "6b78"
+      "id": "6b78",
+      "rating": "*****"
     },
     {
       "id": "5406",
       "name": "Mushroom",
       "image": "https://toppng.com/uploads/preview/pizza-png-11553999379orjd1miyt1.png",
       "price": 499,
-      "size": "Small"
+      "size": "Small",
+      "rating": "***"
     },
     {
       "id": "0317",
       "name": "Mix-BBQ",
       "image": "https://th.bing.com/th/id/OIP.YCXNIX971ixAhZwz46AcAwHaHg?rs=1&pid=ImgDetMain",
       "size": "Larger",
-      "price": 1299
+      "price": 1299,
+      "rating": "*****"
     },
     {
       "id": "0786",
       "image": "https://img.freepik.com/premium-photo/photo-pizza-with-no-background-with-white-back_670382-117521.jpg",
       "name": "Carbonara",
       "size": "Larger",
-      "price": 999
+      "price": 998,
+      "rating": "***"
     },
     {
       "id": "1ad0",
       "image": "https://th.bing.com/th/id/OIP.N6AjoGLagdXJfvuNm66tHwHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain",
       "name": "Chicken mushroom",
       "size": "Small",
-      "price": 699
+      "price": 699,
+      "rating": "**"
     },
     {
       "id": "5e61",
       "image": "https://thumbs.dreamstime.com/b/pepperoni-pizza-basil-leaves-isolated-white-background-36065085.jpg",
       "name": "Four cheese",
       "size": "Medium",
-      "price": 799
+      "price": 999,
+      "rating": "*****"
     }
   ],
   "user": [
@@ -115,6 +108,180 @@
     },
     {
       "id": "9b99",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "399c",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "e346",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "8858",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "8c37",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "702e",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "24ee",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "e8e9",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "ccba",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "48df",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "fadd",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "40a9",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "af61",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "2709",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "f28d",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "958f",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "a1e9",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "ced8",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "65b8",
+      "email": "shyam@12323",
+      "password": "12344668",
+      "name": "shyam"
+    },
+    {
+      "id": "f6f7",
+      "email": "shyam@1223",
+      "password": "12344668",
+      "name": "shyam"
+    },
+    {
+      "id": "89bb",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "5ca0",
+      "email": "shyam@123",
+      "password": "12344668",
+      "name": "shyam"
+    },
+    {
+      "id": "2b4c",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "b84e",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "0ced",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "f0cd",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "b570",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "05f7",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "71a2",
+      "email": "shyam@123",
+      "password": "34466878",
+      "name": "shyam"
+    },
+    {
+      "id": "50b8",
       "email": "shyam@123",
       "password": "34466878",
       "name": "shyam"

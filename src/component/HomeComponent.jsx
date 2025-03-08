@@ -18,17 +18,17 @@ let Home = ()=>{
         <form className="form" onSubmit={(e)=>{e.preventDefault(),    logiFuntion(loginData)}} >
           <h2 style={{ textAlign: "center" , color:"blue" }}>Log in</h2>
           <div className="mini-contener">
-            <p> Name</p>
+            <p style={{color:"green"}}> Name</p>
             <input type="text" name="" id="name-input" placeholder="Enter your name" required value={loginData.name} onChange={(e)=>{setloginData({...loginData,name : e.target.value})}}  />
           </div>
           <div className="mini-contener">
-            <p>Email</p>
+            <p style={{color:"green"}}>Email</p>
             <input type="email" name="" id="image-input" placeholder="Enter your email" required value={loginData.email} onChange={(e)=>{setloginData({...loginData,email : e.target.value})}}    />
             
           </div>
           
           <div className="mini-contener">
-            <p>Password</p>
+            <p style={{color:"green"}}>Password</p>
             <input type="password" name="" id="input-price" placeholder="Enter any 8 character password" required value={loginData.password} onChange={(e)=>{setloginData({...loginData,password : e.target.value})}}   />
               <p style={{color:"red"}}>{wrongPassword}</p>
           </div>

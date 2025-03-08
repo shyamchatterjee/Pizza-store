@@ -6,6 +6,7 @@ import { Context } from "../context/context";
 let useHooks = () => {
   
     let { setArray,updateObj,obj}  = useContext(Context)
+    let navigate = useNavigate()
     let [query,setquery]= useSearchParams()
        let limit = query.get("limit")
   useEffect(() => {
@@ -38,6 +39,7 @@ let useHooks = () => {
               updateObj.size = ""
               updateObj.image = ""
               updateObj.price = ""
+              navigate("/productcomponent")
         })
   }
    

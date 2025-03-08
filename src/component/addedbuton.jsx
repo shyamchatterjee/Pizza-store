@@ -24,8 +24,8 @@ let Addedproduct = ({ element }) => {
       className="add"
       style={{ backgroundColor: bttonColor }}
       disabled={Disabled}
-      onClick={() => {
-        addtoProduct(element), bttoncolorChange();
+      onClick={(e) => {
+       e.preventDefault() , addtoProduct(element), bttoncolorChange();
       }}
     >
       {bttontext}

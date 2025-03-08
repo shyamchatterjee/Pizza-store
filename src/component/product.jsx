@@ -15,8 +15,9 @@ let Product = () => {
       {array.map((element) => {
         return <Link to={"/productcontener/"+ element.id}><div className="product">
                 <img src={element.image} height={100} width={100} alt="" />
-                 <h3>{element.name}</h3>
+                 <h4>{element.name}</h4>
                    <div>{element.size}</div>
+                    <h3 style={{color:"orange"}}>{element.rating}</h3>
                    <h4 style={{color:"green"}}>{ "Rs. "+element.price}</h4>
                    <div className="add-remove-edit">
                      
